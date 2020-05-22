@@ -1,0 +1,9 @@
+body {
+  background-color: #00000F;
+  margin: 0; }
+
+#space_wrap {
+  margin: 0 auto;
+  height: 100%;
+  min-width: 900px;
+}
