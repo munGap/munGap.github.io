@@ -6,9 +6,14 @@
 		<link href="./css/orbit.css" rel="stylesheet" type="text/css">
 		<link href="./css/stars.css" rel="stylesheet" type="text/css">
 		<script type="text/javascript">
-			var audio = new Audio();
+			let space_wrap = document.getElementById('space_wrap');
+
+			let audio = new Audio();
 			audio.src = "./music/kirin_inthebus.mp3";
-			audio.play();
+			
+			space_wrap.onclick = function(){
+				audio.play();
+			}
 		</script>
 	</head>
 	<body>
