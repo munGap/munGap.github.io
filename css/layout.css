@@ -1,0 +1,110 @@
+@charset "utf-8";
+.bodywrap .sec-tit{
+	position:relative;
+	padding-top:0.938rem;
+	margin-bottom:2.5rem;
+	font-family:'KoPub Batang';
+	font-size:0.688rem;
+	font-weight:700;
+	line-height:1.250rem;
+	text-align:center;
+	color:#111;
+	letter-spacing:0.4em;
+}
+.bodywrap .sec-tit:after{
+	content:'';
+	position:absolute;
+	left:3.438rem; top:0;
+	display:block;
+	width:calc(100% - 6.875rem);
+	height:1px;
+	background-color:#0c0c0c;
+}
+.bodywrap .com-btn.tel.sl{
+	background-color:#78c0e9;
+}
+.bodywrap .com-btn.tel.sb{
+	background-color:#f79e9e;
+}
+.bodywrap .com-btn.acc.sl{
+	background-color:#78c0e9;
+}
+.bodywrap .com-btn.acc.sb{
+	background-color:#f79e9e;
+}
+.bodywrap .com-btn.sms{
+	background-color:#ddd;
+}
+.bodywrap .tbanner-section .text.vertical{
+	padding-bottom:2.188rem;
+	background:url("../images/page/wedding_day.png") center bottom 1px no-repeat;
+	background-size:7.750rem auto;
+}
+
+.bodywrap .visual-section{
+	height:100%;
+}
+.bodywrap .visual-section .vertical-center{
+	height:100%;
+	/* padding:2.5rem 0; */
+	padding:5.625rem 0 6.625rem;
+}
+
+.bodywrap .visual-section .vertical-item{
+	width:100%;
+	padding:0 3.438rem;
+}
+.bodywrap .visual-section .vertical-item.date{
+	margin-bottom:1.563rem;
+}
+.bodywrap .visual-section .vertical-item .date{
+	width:1.875rem;
+	min-height:5rem;
+	padding-left:0.625rem;
+	font-family:'KoPub Batang';
+	font-size:1rem;
+	font-weight:300;
+	line-height:1.250rem;
+	text-align:center;
+	text-transform:uppercase;
+	border-left:1px solid #090303;
+}
+.bodywrap .visual-section .vertical-item.photo img{
+	width:100%;
+}
+.bodywrap .visual-section .vertical-item.info{
+	margin-top:1.125rem;
+	text-align:right;
+}
+.bodywrap .visual-section .vertical-item.info .p1{
+	margin-bottom:0.938rem;
+	font-size:0; 
+	line-height:0;
+}
+.bodywrap .visual-section .vertical-item.info .p1 .vs-span{
+	display:inline-block;
+	vertical-align:top;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.250rem;
+	letter-spacing:0.2em;
+}
+.bodywrap .visual-section .vertical-item.info .p1 .bar{
+	margin:0 0.625rem;
+	height:1.250rem;
+	width:0.500rem;
+	background:url('../images/page/bar_01.png') center center no-repeat;
+	background-size:0.500rem;
+	letter-spacing:0;
+}
+.bodywrap .visual-section .vertical-item.info .p2{
+	font-size:0.750rem;
+	font-weight:400;
+	line-height:1.125rem;
+}
+.bodywrap .greeting-section{
+	margin-top:-3.125rem;
+}
+.bodywrap .honjuTel-section .honju-tit.sb{
+	color:#5b1eaa;
+}
