@@ -36,8 +36,7 @@
 						<p style="display:none;" id="m_off">stop</p>
 					</div>
 				</a>
-				<!-- <audio id="audio" preload="none" loop="loop" src="/music/bgm1.mp3"></audio>
-				<iframe id="ie_player" src="/script/order/bgm.asp?bgm=/music/bgm1.mp3" width="0" height="0"></iframe> -->
+				<audio id="audio" preload="none" loop="loop" src="music/bgm.mp3"></audio>
 			</div>
 			<!--//player-->
 
@@ -844,7 +843,7 @@
 	<script>
 		function music_player(){   
 			if ($('#m_off').text()=='stop'){
-				bgmStart('/music/bgm1.mp3');
+				bgmStart('music/bgm1.mp3');
 				$('#m_off').text('start');
 				document.getElementById('m_on').src="images/common/music_01_on.png" 
 			}else{
@@ -879,7 +878,7 @@
 		}
 
 		// BGM
-		//music_player();
+		music_player();
 
 		// 포토갤러리
 		imageGallery();
