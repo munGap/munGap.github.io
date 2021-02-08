@@ -246,15 +246,6 @@ function kakaoMap(x, y) { // 다음 지도
 	marker.setMap(map);
 }
 
- function kakaoNavi(x, y){
-	Kakao.Navi.start({
-		name: "S가든 웨딩",
-		x: x,
-		y: y,
-		coordType: 'wgs84'
-	});
-}
-
 function pcAlert() { // PC환경에서 접속시 alert
 	alert('미리보기 페이지에서는 기능이 제한됩니다.');
 }

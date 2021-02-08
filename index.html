@@ -839,6 +839,12 @@
 			</div>			
 		</div>
 	</div>
+	<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script>
+        Kakao.init('85a131350ba84873cb047c8644f3b997');
+
+        console.log(Kakao.isInitialized());
+    </script>
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=85a131350ba84873cb047c8644f3b997"></script>
 	<script>
 		function music_player(){   
@@ -906,6 +912,14 @@
 			//alert("URL 복사가 완료되었습니다."); 					  
 		}
 
+		 function kakaoNavi(x, y){
+			Kakao.Navi.start({
+				name: "S가든 웨딩",
+				x: x,
+				y: y,
+				coordType: 'wgs84'
+			});
+		}
 	</script>
 
 </body>
