@@ -239,7 +239,7 @@ function kakaoMap(x, y) { // 다음 지도
 	var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
 
 	var marker = new kakao.maps.Marker({
-		position: markerPosition,
+		position: markerPosition, 
 		image: markerImage
 	});
 	marker.setMap(map);
