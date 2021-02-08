@@ -182,7 +182,7 @@
 				<div class="calendar-wrap">
 					<div id="calendar"></div>
 					<div class="day-time">
-						<span class="day">sat.</span> <span class="time">pm 1:30</span>
+						<span class="day">sat.</span> <span class="time">pm 1:00</span>
 					</div>
 				</div>
 			</section>
@@ -328,14 +328,14 @@
 			<!-- 텍스트 배너 //-->
 
 			<!--라이브웨딩안내-->
-			<section class="livewed-section">
+			<!-- <section class="livewed-section">
 				<div class="sec-tit">라이브 웨딩 안내</div>
 				<div class="sec-txt">참석이 어려운 분들께서는<br>온라인 중계로 시청하실 수 있습니다.</div>
 				<div class="sec-date">10월 26일 오후 1시 30분</div>
 				<div class="button">
 					<a href="javascript:pcAlert();">라이브 웨딩 보러가기</a>
 				</div>
-			</section>
+			</section> -->
 			<!--//라이브웨딩안내-->
 
 			<!--// 오시는길 -->
@@ -391,15 +391,14 @@
 				</div>
 				<div class="info">
 					<div class="contain">
-						
-						<dl>
+						<!-- <dl>
 							<dt>전세버스안내</dt>
 							<dd>예식당일 오전 11시 / 동대입구 전철역 1번출구 앞 출발</dd>
 						</dl>
 						<dl>
 							<dt>계좌번호안내</dt>
 							<dd>농협 123-456788-7654321 예금주 : 이광수</dd>
-						</dl>
+						</dl> -->
 						<dl>
 							<dt>기타안내</dt>
 							<dd>화환은 정중히 사양합니다.</dd>
@@ -679,7 +678,7 @@
 					<form action="">
 						<div class="group col-2 first">
 							<div>
-								국민은행
+								농협
 							</div>
 							<div>
 								<span>예금주 : </span> 이명탁
@@ -687,7 +686,7 @@
 						</div>
 						<div class="group">
 							<div>
-								<input name="GBankNum1" id="GBankNum1" class="input" readonly value="000-123-456789"><button type="button" class="btn" onclick="jsCopyLink('000-123-456789', 'accountCopyG')">복사</button>
+								<input name="GBankNum1" id="GBankNum1" class="input" readonly value="302-0851-9195-11"><button type="button" class="btn" onclick="jsCopyLink('302-0851-9195-11', 'accountCopyG', 0)">복사</button>
 							</div>
 						</div>			
 						<div class="group col-2">
@@ -700,7 +699,7 @@
 						</div>
 						<div class="group">
 							<div>
-								<input name="GBankNum2" id="GBankNum2" class="input" readonly value="000-123-456789"><button type="button" class="btn">복사</button>
+								<input name="GBankNum2" id="GBankNum2" class="input" readonly value="457601-04-157651"><button type="button" class="btn" onclick="jsCopyLink('457601-04-157651', 'accountCopyG', 1)">복사</button>
 							</div>
 						</div>			
 					</form>
@@ -718,7 +717,7 @@
 					<form action="">
 						<div class="group col-2 first">
 							<div>
-								국민은행
+								새마을금고
 							</div>
 							<div>
 								<span>예금주 : </span> 박근철
@@ -726,12 +725,12 @@
 						</div>
 						<div class="group">
 							<div>
-								<input name="BBankNum1" id="BBankNum1" class="input" readonly value="000-123-456789"><button type="button" class="btn">복사</button>
+								<input name="BBankNum1" id="BBankNum1" class="input" readonly value="3015-09-011869-0"><button type="button" class="btn" onclick="jsCopyLink('3015-09-011869-0', 'accountCopyB', 2)">복사</button>
 							</div>
 						</div>			
 						<div class="group col-2">
 							<div>
-								국민은행
+								하나은행
 							</div>
 							<div>
 								<span>예금주 : </span> 박미진
@@ -739,7 +738,7 @@
 						</div>
 						<div class="group">
 							<div>
-								<input name="BBankNum2" id="BBankNum2" class="input" readonly value="000-123-456789"><button type="button" class="btn">복사</button>
+								<input name="BBankNum2" id="BBankNum2" class="input" readonly value="534-910347-32107"><button type="button" class="btn" onclick="jsCopyLink('534-910347-32107', 'accountCopyB', 3)">복사</button>
 							</div>
 						</div>			
 					</form>
@@ -749,7 +748,7 @@
 		</div>
 	</div>
 
-	<div class="pop-wrap copyComplete" id="copyComplete">
+	<div class="pop-wrap copyComplete" id="copyComplete0">
 		<div class="pop-inner">			
 			<div class="pop-body">
 				<div class="form">
@@ -759,13 +758,82 @@
 							<div>
 								<div class="tit">계좌번호가 복사되었습니다.</div>
 								<div class="bkinfo">
-									<span>국민은행 000-123-456789</span><br><span>예금주 이명탁</span>
+									<span>농협 302-0851-9195-11</span><br><span>예금주 이명탁</span>
 								</div>								
 							</div>
 						</div>
 					</div>
 					<div class="buttons">	
-						<a href="javascript:void(0);" class="btn" onclick="popClose('copyComplete')">확인</a>						
+						<a href="javascript:void(0);" class="btn" onclick="popClose('copyComplete0')">확인</a>						
+					</div>
+				</form>
+				</div>
+			</div>			
+		</div>
+	</div>
+	<div class="pop-wrap copyComplete" id="copyComplete1">
+		<div class="pop-inner">			
+			<div class="pop-body">
+				<div class="form">
+				<form action="">
+					<div class="con">
+						<div class="group">
+							<div>
+								<div class="tit">계좌번호가 복사되었습니다.</div>
+								<div class="bkinfo">
+									<span>국민은행 457601-04-157651</span><br><span>예금주 이광수</span>
+								</div>								
+							</div>
+						</div>
+					</div>
+					<div class="buttons">	
+						<a href="javascript:void(0);" class="btn" onclick="popClose('copyComplete1')">확인</a>						
+					</div>
+				</form>
+				</div>
+			</div>			
+		</div>
+	</div>
+	<div class="pop-wrap copyComplete" id="copyComplete2">
+		<div class="pop-inner">			
+			<div class="pop-body">
+				<div class="form">
+				<form action="">
+					<div class="con">
+						<div class="group">
+							<div>
+								<div class="tit">계좌번호가 복사되었습니다.</div>
+								<div class="bkinfo">
+									<span>새마을금고 3015-09-011869-0</span><br><span>예금주 박근철</span>
+								</div>								
+							</div>
+						</div>
+					</div>
+					<div class="buttons">	
+						<a href="javascript:void(0);" class="btn" onclick="popClose('copyComplete2')">확인</a>						
+					</div>
+				</form>
+				</div>
+			</div>			
+		</div>
+	</div>
+	<div class="pop-wrap copyComplete" id="copyComplete3">
+		<div class="pop-inner">			
+			<div class="pop-body">
+				<div class="form">
+				<form action="">
+					<div class="con">
+						<div class="group">
+							<div>
+								<div class="tit">계좌번호가 복사되었습니다.</div>
+								<div class="bkinfo">
+									<span>하나은행 534-910347-32107</span><br><span>예금주 박미진</span>
+								</div>								
+							</div>
+						</div>
+					</div>
+					<div class="buttons">	
+						<a href="javascript:void(0);" class="btn" onclick="popClose('copyComplete3')">확인</a>						
 					</div>
 				</form>
 				</div>
@@ -822,9 +890,9 @@
 		// 달력
 		dataPicker('2021-03-06');
 
-		// 다음 지도
-		daumMap(127.354477, 36.3456446);
-		function jsCopyLink(copyText, id) {            
+		// 카카오 지도
+		kakaoMap(127.354477, 36.3456446);
+		function jsCopyLink(copyText, id, idx) {            
 			var tmpTextarea = document.createElement('textarea');
 			tmpTextarea.value = copyText;
 		 
@@ -835,7 +903,7 @@
 			document.execCommand('copy');
 			document.body.removeChild(tmpTextarea);
 			popClose(id);
-			popOpen('0 1rem','copyComplete');			
+			popOpen('0 1rem','copyComplete' + idx);			
 			//alert("URL 복사가 완료되었습니다."); 					  
 		}
 

@@ -220,24 +220,21 @@ function galleryType3(toggle, index){ // 원형 갤러리
 	}
 }
 
-function daumMap(x, y) { // 다음 지도
-	var mapContainer = document.getElementById('map_canvas'), // 지도를 표시할 div 
-		mapOption = {
-			center: new daum.maps.LatLng(x, y), // 지도의 중심좌표
-			level: 3 // 지도의 확대 레벨
-		};  
+function kakaoMap(x, y) { // 다음 지도
+	var container = document.getElementById('map_canvas');
+	var options = {
+		center: new kakao.maps.LatLng(x, y),
+		level: 3
+	};
 
-	// 지도를 생성합니다    
-	var map = new daum.maps.Map(mapContainer, mapOption); 
+	var map = new kakao.maps.Map(container, options);
 
-	// 마커가 표시될 위치입니다 
-	var markerPosition  = new daum.maps.LatLng(x, y); 
+	var markerPosition  = new kakao.maps.LatLng(x, y); 
 
-	var daum_marker = new daum.maps.Marker({ 
-		// 지도 중심좌표에 마커를 생성합니다 
-		map: map,
+	var marker = new kakao.maps.Marker({
 		position: markerPosition
-	}); 
+	});
+	marker.setMap(map);
 }
 
 function pcAlert() { // PC환경에서 접속시 alert
